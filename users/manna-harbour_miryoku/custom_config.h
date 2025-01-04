@@ -46,3 +46,42 @@ XXX,  KC_GRV,  K11,  K12,  K13,  KC_EQL,         K15,  KC_LSFT,  KC_LGUI,  KC_LA
 XXX,  KC_0,  K21,  K22,  K23,  KC_PLUS,         K25,  K26,  K27,  K28,  K29,  XXX, \
                   KC_LBRC,  KC_RBRC,  KC_BSLS,         K35,  K36,  K37 \
 )
+
+#define MIRYOKU_LAYERMAPPING_NAV( \
+      K00,  K01,  K02,  K03,  K04,         K05,  K06,  K07,  K08,  K09, \
+      K10,  K11,  K12,  K13,  K14,         K15,  K16,  K17,  K18,  K19, \
+      K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29, \
+      N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
+) \
+LAYOUT_split_3x6_3( \
+XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_DOWN,  KC_UP,  KC_RIGHT,  K09,  XXX, \
+XXX,  K10,  K11,  K12,  K13,  K14,            KC_LEFT, U_CPY, U_PST, U_CUT,  K19,  XXX, \
+XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
+                  K32,  K33,  K34,            K35,  K36,  K37 \
+)
+
+#define MIRYOKU_LAYERMAPPING_MEDIA( \
+      K00,  K01,  K02,  K03,  K04,         K05,  K06,  K07,  K08,  K09, \
+      K10,  K11,  K12,  K13,  K14,         K15,  K16,  K17,  K18,  K19, \
+      K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29, \
+      N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
+) \
+LAYOUT_split_3x6_3( \
+XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_VOLD,  KC_VOLU,  KC_MNXT,  K09,  XXX, \
+XXX,  K10,  K11,  K12,  K13,  K14,            KC_H, KC_N, KC_E, KC_O,  KC_I,  XXX, \
+XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
+                  K32,  K33,  K34,            K35,  K36,  K37 \
+)
+
+#define MIRYOKU_LAYERMAPPING_MOUSE( \
+      K00,  K01,  K02,  K03,  K04,         K05,  K06,  K07,  K08,  K09, \
+      K10,  K11,  K12,  K13,  K14,         K15,  K16,  K17,  K18,  K19, \
+      K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29, \
+      N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
+) \
+LAYOUT_split_3x6_3( \
+XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_MS_D,  KC_MS_U,  KC_MS_R,  K09,  XXX, \
+XXX,  K10,  K11,  K12,  K13,  K14,            KC_MS_L, U_CPY, U_PST, U_CUT,  K19,  XXX, \
+XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
+                  K32,  K33,  K34,            K35,  K36,  K37 \
+)
