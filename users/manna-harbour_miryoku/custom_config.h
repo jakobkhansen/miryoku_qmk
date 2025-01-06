@@ -17,7 +17,7 @@ LAYOUT_split_3x6_3( \
 XXX,  KC_Q,  KC_W, KC_F,  KC_P,  KC_B,                                   KC_Y,  KC_J,  KC_K,  KC_L,  KC_SCLN,  XXX, \
 XXX,  LCTL_T(KC_A),  LALT_T(KC_R),  LGUI_T(KC_S),  LSFT_T(KC_T),  KC_G,  KC_H,  LSFT_T(KC_N),  LGUI_T(KC_E),  LALT_T(KC_O),  LCTL_T(KC_I),  XXX, \
 XXX,  KC_Z,  KC_X,  KC_C,  KC_D,  KC_V,                                  KC_M,  KC_U,  KC_COMMA,  KC_DOT,  KC_MINUS,  XXX, \
-LT(U_MEDIA,KC_TAB),  LT(U_NAV,KC_SPC),  OSM(MOD_LSFT),                   LT(U_NUM,KC_BSPC),  LT(U_SYM,KC_ENT),  LT(U_FUN, KC_ESC) \
+LT(U_MEDIA,KC_ESC),  LT(U_NAV,KC_SPC),  OSM(MOD_LSFT),                   LT(U_NUM,KC_BSPC),  LT(U_SYM,KC_ENT),  LT(U_FUN, KC_TAB) \
 )
 
 
