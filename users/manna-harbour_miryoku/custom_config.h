@@ -36,9 +36,9 @@ LT(U_MEDIA,KC_ESC),  LT(U_NAV,KC_SPC),  OSM(MOD_LSFT),                   LT(U_NU
 ) \
 LAYOUT_split_3x6_3( \
 XXX,  KC_EXLM,  KC_QUES,  KC_AT,  KC_COLN,  KC_ASTR, K05,  K06,  K07,  K08,  K09,  XXX, \
-KC_AMPR,  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  K16,  K17,  K18,  K19,  XXX, \
-KC_DLR,  KC_HASH,  KC_PERC,  KC_LCBR,  KC_RCBR,  KC_PIPE,         K25,  K26,  K27,  K28,  K29,  XXX , \
-                  KC_LBRC,  KC_RBRC,  KC_SLSH,         K35,  K36,  K37 \
+XXX,  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  K16,  K17,  K18,  K19,  XXX, \
+KC_DLR,  KC_DLR,  KC_PERC,  KC_AMPR,  KC_HASH,  KC_PIPE,         K25,  K26,  K27,  K28,  K29,  XXX , \
+                  KC_LCBR,  KC_RCBR,  KC_SLSH,         K35,  K36,  K37 \
 )
 
 #define MIRYOKU_LAYERMAPPING_NUM( \
