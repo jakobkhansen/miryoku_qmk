@@ -26,7 +26,7 @@ LAYOUT_split_3x6_3( \
 XXX,  KC_Q,  KC_W, KC_F,  KC_P,  KC_B,                                   KC_Y,  KC_J,  KC_K,  KC_L,  KC_SCLN,  XXX, \
 XXX,  LCTL_T(KC_A),  LALT_T(KC_R),  LGUI_T(KC_S),  LSFT_T(KC_T),  KC_G,  KC_H,  RSFT_T(KC_N),  LGUI_T(KC_E),  LALT_T(KC_O),  LCTL_T(KC_I),  XXX, \
 XXX,  KC_Z,  KC_X,  KC_C,  KC_D,  KC_V,                                  KC_M,  KC_U,  KC_COMMA,  KC_DOT,  KC_MINUS,  XXX, \
-LT(U_FUN,KC_ESC),  LT(U_NAV,KC_SPC), LT(U_MEDIA, KC_TAB),                LT(U_NUM,KC_BSPC),  LT(U_SYM,KC_ENT),  OSM(MOD_LSFT) \
+XXX,  LT(U_NAV,KC_SPC), LT(U_MEDIA, KC_TAB),                LT(U_NUM,KC_BSPC),  LT(U_SYM,KC_ENT),  XXX \
 )
 
 
@@ -63,9 +63,9 @@ XXX,  KC_0,  K21,  K22,  K23,  KC_PLUS,         K25,  K26,  K27,  K28,  K29,  XX
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
 ) \
 LAYOUT_split_3x6_3( \
-XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_DOWN,  KC_UP,  KC_RIGHT,  K09,  XXX, \
-XXX,  K10,  K11,  K12,  K13,  K14,            KC_LEFT, U_CPY, U_PST, U_CUT,  K19,  XXX, \
-XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
+XXX,  KC_F12,  KC_F7,  KC_F8,  KC_F9,  K04,            K05,  KC_DOWN,  KC_UP,  KC_RIGHT,  K09,  XXX, \
+XXX,  KC_F11,  KC_F4,  KC_F5,  KC_F6,  K14,            KC_LEFT, U_CPY, U_PST, U_CUT,  K19,  XXX, \
+XXX,  KC_F10,  KC_F1,  KC_F2,  KC_F3,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
                   K32,  K33,  K34,            K35,  K36,  K37 \
 )
 
@@ -81,17 +81,3 @@ XXX,  K10,  K11,  K12,  K13,  K14,            KC_MPRV, KC_BRID, KC_BRIU, KC_O,  
 XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
                   K32,  K33,  K34,            K35,  K36,  K37 \
 )
-
-#define MIRYOKU_LAYERMAPPING_FUN( \
-      K00,  K01,  K02,  K03,  K04,         K05,  K06,  K07,  K08,  K09, \
-      K10,  K11,  K12,  K13,  K14,         K15,  K16,  K17,  K18,  K19, \
-      K20,  K21,  K22,  K23,  K24,         K25,  K26,  K27,  K28,  K29, \
-      N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
-) \
-LAYOUT_split_3x6_3( \
-XXX, TD(U_TD_BOOT),     TD(U_TD_U_TAP),    TD(U_TD_U_EXTRA),  TD(U_TD_U_BASE),   U_NA,              KC_PSCR,           KC_F7,             KC_F8,             KC_F9,             KC_F12, XXX,            \
-XXX, KC_LGUI,           KC_LALT,           KC_LCTL,           KC_LSFT,           U_NA,              KC_SCRL,           KC_F4,             KC_F5,             KC_F6,             KC_F11, XXX,           \
-XXX, U_NA,              KC_ALGR,           TD(U_TD_U_MEDIA),  TD(U_TD_U_FUN),    U_NA,              KC_PAUS,           KC_F1,             KC_F2,             KC_F3,             KC_F10, XXX,           \
-XXX,              XXX,              XXX,              KC_TAB,            KC_SPC,            KC_APP \
-)
-
