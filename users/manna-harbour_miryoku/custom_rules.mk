@@ -2,6 +2,7 @@
 # https://github.com/manna-harbour/miryoku
 
 AUTO_SHIFT_ENABLE = no
+COMBO_ENABLE = yes
 
 # r2g rules
 OLED_ENABLE     = no
