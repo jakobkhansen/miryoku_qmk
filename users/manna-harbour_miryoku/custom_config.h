@@ -37,10 +37,10 @@ XXX,  LT(U_NAV,KC_SPC), LT(U_MEDIA, KC_TAB),                LT(U_NUM,KC_BSPC),  
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
 ) \
 LAYOUT_split_3x6_3( \
-XXX,  KC_EXLM,  KC_QUES,  KC_AT,  KC_COLN,  KC_ASTR, K05,  K06,  K07,  K08,  K09,  XXX, \
-XXX,  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  K16,  K17,  K18,  K19,  XXX, \
-KC_DLR,  KC_DLR,  KC_PERC,  KC_AMPR,  KC_HASH,  KC_PIPE,         K25,  K26,  K27,  K28,  K29,  XXX , \
-                  KC_LCBR,  KC_RCBR,  KC_SLSH,         K35,  K36,  K37 \
+XXX,  KC_EXLM,  KC_AT, KC_LBRC,  KC_RBRC,   KC_ASTR, K05,  K06,  K07,  K08,  K09,  XXX, \
+XXX,  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_AMPR,         K15,  K16,  K17,  K18,  K19,  XXX, \
+XXX,  KC_DLR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_PIPE,         K25,  K26,  K27,  K28,  K29,  XXX , \
+                  XXX,  KC_QUES,  KC_SLSH,         K35,  K36,  XXX \
 )
 
 #define MIRYOKU_LAYERMAPPING_NUM( \
@@ -52,8 +52,8 @@ KC_DLR,  KC_DLR,  KC_PERC,  KC_AMPR,  KC_HASH,  KC_PIPE,         K25,  K26,  K27
 LAYOUT_split_3x6_3( \
 XXX,  KC_TILD,  K01,  K02,  K03,  KC_CIRC,         K05,  K06,  K07,  K08,  K09,  XXX, \
 XXX,  KC_GRV,  K11,  K12,  K13,  KC_EQL,         K15,  KC_RSFT,  KC_LGUI,  KC_LALT,  KC_LCTL,  XXX, \
-XXX,  KC_0,  K21,  K22,  K23,  KC_PLUS,         K25,  K26,  K27,  K28,  K29,  XXX, \
-                  KC_LBRC,  KC_RBRC,  KC_BSLS,         K35,  K36,  K37 \
+XXX,  KC_PERC,  K21,  K22,  K23,  KC_PLUS,         K25,  K26,  K27,  K28,  K29,  XXX, \
+                  XXX,  KC_0,  KC_BSLS,         K35,  K36,  XXX \
 )
 
 #define MIRYOKU_LAYERMAPPING_NAV( \
@@ -66,7 +66,7 @@ LAYOUT_split_3x6_3( \
 XXX,  KC_F12,  KC_F7,  KC_F8,  KC_F9,  K04,            K05,  KC_DOWN,  KC_UP,  KC_RIGHT,  K09,  XXX, \
 XXX,  KC_F11,  KC_F4,  KC_F5,  KC_F6,  K14,            KC_LEFT, U_CPY, U_PST, U_CUT,  K19,  XXX, \
 XXX,  KC_F10,  KC_F1,  KC_F2,  KC_F3,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
-                  K32,  K33,  K34,            K35,  K36,  K37 \
+                  XXX,  K33,  K34,            K35,  K36,  XXX \
 )
 
 #define MIRYOKU_LAYERMAPPING_MEDIA( \
@@ -79,5 +79,5 @@ LAYOUT_split_3x6_3( \
 XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_VOLD,  KC_VOLU,  KC_MNXT,  K09,  XXX, \
 XXX,  K10,  K11,  K12,  K13,  K14,            KC_MPRV, KC_BRID, KC_BRIU, KC_O,  KC_I,  XXX, \
 XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
-                  K32,  K33,  K34,            K35,  K36,  K37 \
+                  XXX,  K33,  K34,            K35,  K36,  XXX \
 )
