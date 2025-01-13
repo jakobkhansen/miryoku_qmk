@@ -65,9 +65,9 @@ XXX,  KC_PERC,  K21,  K22,  K23,  KC_PLUS,         K25,  K26,  K27,  K28,  K29, 
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
 ) \
 LAYOUT_split_3x6_3( \
-XXX,  KC_F12,  KC_F7,  KC_F8,  KC_F9,  K04,            K05,  KC_DOWN,  KC_UP,  KC_RIGHT,  K09,  XXX, \
-XXX,  KC_F11,  KC_F4,  KC_F5,  KC_F6,  K14,            KC_LEFT, U_CPY, U_PST, U_CUT,  K19,  XXX, \
-XXX,  KC_F10,  KC_F1,  KC_F2,  KC_F3,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
+XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_DOWN,  KC_UP,  KC_RIGHT,  K09,  XXX, \
+XXX,  K10,  K11,  K12,  K13,  K14,            KC_LEFT, U_CPY, U_PST, U_CUT,  K19,  XXX, \
+XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
                   XXX,  K33,  K34,            K35,  K36,  XXX \
 )
 
@@ -78,8 +78,8 @@ XXX,  KC_F10,  KC_F1,  KC_F2,  KC_F3,  K24,            K25,  K26,  K27,  K28,  K
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
 ) \
 LAYOUT_split_3x6_3( \
-XXX,  K00,  K01,  K02,  K03,  K04,            K05,  KC_VOLD,  KC_VOLU,  KC_MNXT,  K09,  XXX, \
-XXX,  K10,  K11,  K12,  K13,  K14,            KC_MPRV, KC_BRID, KC_BRIU, KC_O,  KC_I,  XXX, \
-XXX,  K20,  K21,  K22,  K23,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
+XXX,  KC_F12,  KC_F7,  KC_F8,  KC_F9,  K04,            K05,  KC_VOLD,  KC_VOLU,  KC_MNXT,  K09,  XXX, \
+XXX,  KC_F11,  KC_F4,  KC_F5,  KC_F6,  K14,            KC_MPRV, KC_BRID, KC_BRIU, KC_O,  KC_I,  XXX, \
+XXX,  KC_F10,  KC_F1,  KC_F2,  KC_F3,  K24,            K25,  K26,  K27,  K28,  K29,  XXX, \
                   XXX,  K33,  K34,            K35,  K36,  XXX \
 )
