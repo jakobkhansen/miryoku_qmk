@@ -7,4 +7,4 @@ COMBO_ENABLE = yes
 # r2g rules
 OLED_ENABLE     = no
 RGBLIGHT_ENABLE = no
-RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_ENABLE = no
