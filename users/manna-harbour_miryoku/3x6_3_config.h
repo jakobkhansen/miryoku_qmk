@@ -23,9 +23,9 @@ XXX,  LT(U_NAV,KC_SPC), LT(U_MEDIA, KC_TAB),                LT(U_NUM,KC_BSPC),  
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39 \
 ) \
 LAYOUT_split_3x6_3( \
-XXX,  KC_EXLM,  KC_AT, KC_LBRC,  KC_RBRC,   KC_ASTR, K05,  K06,  K07,  K08,  K09,  XXX, \
-XXX,  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_AMPR,         K15,  K16,  K17,  K18,  K19,  XXX, \
-XXX,  KC_DLR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_PIPE,         K25,  K26,  K27,  K28,  K29,  XXX , \
+XXX,  KC_EXLM,  KC_AT, KC_LBRC,  KC_RBRC,   KC_ASTR,           K05,  K06,  K07,  K08,  K09,  XXX, \
+XXX,  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  K16,  K17,  K18,  K19,  XXX, \
+XXX,  KC_DLR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_AMPR,         K25,  K26,  KC_LABK,  KC_RABK,  K29,  XXX , \
                   XXX,  KC_QUES,  KC_SLSH,         K35,  K36,  XXX \
 )
 
@@ -38,7 +38,7 @@ XXX,  KC_DLR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_PIPE,         K25,  K26,  K27,  
 LAYOUT_split_3x6_3( \
 XXX,  KC_TILD,  K01,  K02,  K03,  KC_PLUS,         K05,  K06,  K07,  K08,  K09,  XXX, \
 XXX,  KC_GRV,  K11,  K12,  K13,  KC_EQL,         K15,  KC_RSFT,  KC_LGUI,  KC_LALT,  KC_LCTL,  XXX, \
-XXX,  KC_PERC,  K21,  K22,  K23,  KC_CIRC,         K25,  K26,  K27,  K28,  K29,  XXX, \
+XXX,  KC_PERC,  K21,  K22,  K23,  KC_CIRC,         K25,  K26,  KC_LABK,  KC_RABK,  K29,  XXX, \
                   XXX,  KC_0,  KC_BSLS,         K35,  K36,  XXX \
 )
 

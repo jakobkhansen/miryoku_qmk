@@ -14,7 +14,7 @@
 #define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
 
 // Combos
-#define COMBO_COUNT 2
+#define COMBO_COUNT 3
 #define COMBO_TERM 20
 #define EXTRA_SHORT_COMBOS
 
@@ -25,5 +25,9 @@
 #define SPLIT_WATCHDOG_ENABLE
 #define SPLIT_WATCHDOG_TIMEOUT 3000
 
-// #include "3x6_3_config.h"
-#include "3x5_2_config.h"
+#ifdef KEYBOARD_crkbd
+#    include "3x6_3_config.h"
+#endif
+#ifdef KEYBOARD_ferris
+#    include "3x5_2_config.h"
+#endif
