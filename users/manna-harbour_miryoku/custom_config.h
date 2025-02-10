@@ -28,6 +28,10 @@
 #ifdef KEYBOARD_crkbd
 #    include "3x6_3_config.h"
 #endif
+#ifdef KEYBOARD_bastardkb_tbkmini
+#    include "3x6_3_config.h"
+#endif
+
 #ifdef KEYBOARD_ferris
 #    include "3x5_2_config.h"
 #endif
