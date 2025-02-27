@@ -33,5 +33,6 @@
 #endif
 
 #ifdef KEYBOARD_ferris
+#    undef EE_HANDS
 #    include "3x5_2_config.h"
 #endif
