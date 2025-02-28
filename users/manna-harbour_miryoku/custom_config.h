@@ -7,7 +7,7 @@
 #define IGNORE_MOD_TAP_INTERRUPT
 #define TAPPING_FORCE_HOLD
 #undef TAPPING_TERM
-#define TAPPING_TERM 165
+#define TAPPING_TERM 190
 #undef MIRYOKU_KLUDGE_THUMBCOMBOS
 
 // Caps word
@@ -33,6 +33,5 @@
 #endif
 
 #ifdef KEYBOARD_ferris
-#    undef EE_HANDS
 #    include "3x5_2_config.h"
 #endif
