@@ -6,7 +6,7 @@
 // Mod taps
 #define IGNORE_MOD_TAP_INTERRUPT
 #undef TAPPING_TERM
-#define TAPPING_TERM 165
+#define TAPPING_TERM 190
 #undef MIRYOKU_KLUDGE_THUMBCOMBOS
 
 #undef QUICK_TAP_TERM
@@ -33,7 +33,6 @@
 #ifdef KEYBOARD_bastardkb_tbkmini
 #    include "3x6_3_config.h"
 #endif
-
 #ifdef KEYBOARD_ferris
 #    include "3x5_2_config.h"
 #endif
