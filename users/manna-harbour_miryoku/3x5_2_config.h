@@ -48,6 +48,6 @@ LAYOUT_split_3x5_2( \
 LAYOUT_split_3x5_2( \
   QK_BOOT,        KC_F7,  KC_F8,  KC_F9,  KC_F12,            K05,     KC_DOWN,  KC_UP,    KC_RIGHT,  K09,   \
   K10,            KC_F4,  KC_F5,  KC_F6,  KC_F11,            KC_LEFT, KC_VOLD,  KC_VOLU,  K18,       K19,   \
-  K20,            KC_F1,  KC_F2,  KC_F3,  KC_F10,            K25,     K26,      KC_BRID,  KC_BRIU,   K29,   \
+  K20,            KC_F1,  KC_F2,  KC_F3,  KC_F10,            K25,     KC_BRID,  KC_BRIU,  K28,       K29,   \
                                   K33,    K34,               K35,     K36                                   \
 )
