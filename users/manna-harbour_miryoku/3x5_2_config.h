@@ -20,10 +20,10 @@ LAYOUT_split_3x5_2( \
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39  \
 ) \
 LAYOUT_split_3x5_2( \
-  KC_EXLM,  KC_AT,    KC_LBRC,  KC_RBRC,  KC_ASTR,        K05,  K06,  K07,      K08,      KC_COLN,   \
-  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  K16,  K17,      K18,      K19,       \
-  KC_AMPR,  KC_HASH,  KC_LCBR,  KC_RCBR, KC_DLR,          K25,  K26,  KC_LABK,  KC_RABK,  KC_UNDS,   \
-                                KC_QUES,  KC_SLSH,        K35,  K36                                  \
+  KC_EXLM,  KC_AT,    KC_LBRC,  KC_RBRC,  KC_ASTR,        K05,  K06,      K07,      K08,      KC_COLN, \
+  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  KC_RSFT,  KC_LGUI,  KC_LALT,  KC_LCTL, \
+  KC_AMPR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_DLR,         K25,  K26,      KC_LABK,  KC_RABK,  KC_UNDS, \
+                                KC_QUES,  KC_SLSH,        K35,  K36                                    \
 )
 
 #define MIRYOKU_LAYERMAPPING_NUM( \
@@ -46,8 +46,8 @@ LAYOUT_split_3x5_2( \
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39  \
 ) \
 LAYOUT_split_3x5_2( \
-  QK_BOOT,        KC_F7,  KC_F8,  KC_F9,  KC_F12,            K05,     KC_DOWN,  KC_UP,    KC_RIGHT,  K09,   \
-  K10,            KC_F4,  KC_F5,  KC_F6,  KC_F11,            KC_LEFT, KC_VOLD,  KC_VOLU,  K18,       K19,   \
-  K20,            KC_F1,  KC_F2,  KC_F3,  KC_F10,            K25,     KC_BRID,  KC_BRIU,  K28,       K29,   \
-                                  K33,    K34,               K35,     K36                                   \
+  QK_BOOT,        KC_F7,          KC_F8,          KC_F9,         KC_F12,    K05,     KC_DOWN,  KC_UP,    KC_RIGHT,  K09,   \
+  LCTL_T(K10),    LALT_T(KC_F4),  LGUI_T(KC_F5),  LSFT_T(KC_F6), KC_F11,    KC_LEFT, KC_VOLD,  KC_VOLU,  K18,       K19,   \
+  K20,            KC_F1,          KC_F2,          KC_F3,         KC_F10,    K25,     KC_BRID,  KC_BRIU,  K28,       K29,   \
+                                                  K33,           K34,       K35,     K36                                   \
 )
