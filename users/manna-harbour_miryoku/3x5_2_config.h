@@ -20,10 +20,10 @@ LAYOUT_split_3x5_2( \
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39  \
 ) \
 LAYOUT_split_3x5_2( \
-  KC_EXLM,  KC_AT,    KC_LBRC,  KC_RBRC,  KC_ASTR,        K05,  K06,      K07,      K08,      KC_COLN, \
-  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  KC_RSFT,  KC_LGUI,  KC_LALT,  KC_LCTL, \
-  KC_AMPR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_DLR,         K25,  K26,      KC_LABK,  KC_RABK,  KC_UNDS, \
-                                KC_QUES,  KC_SLSH,        K35,  K36                                    \
+  KC_EXLM,  KC_AT,    KC_LBRC,  KC_RBRC,  KC_ASTR,        K05,  K06,           K07,          K08,          KC_COLN, \
+  KC_QUOT,  KC_DQUO,  KC_LPRN,  KC_RPRN,  KC_EQL,         K15,  RSFT_T(KC_N),  LGUI_T(KC_E), LALT_T(KC_O), LCTL_T(KC_I), \
+  KC_AMPR,  KC_HASH,  KC_LCBR,  KC_RCBR,  KC_DLR,         K25,  K26,           KC_LABK,      KC_RABK,      KC_UNDS, \
+                                KC_QUES,  KC_SLSH,        K35,  K36  \
 )
 
 #define MIRYOKU_LAYERMAPPING_NUM( \
@@ -33,10 +33,10 @@ LAYOUT_split_3x5_2( \
       N30,  N31,  K32,  K33,  K34,         K35,  K36,  K37,  N38,  N39  \
 ) \
 LAYOUT_split_3x5_2( \
-  KC_TILD,  K01,  K02,  K03,  KC_PLUS,         K05,  K06,      K07,      K08,      KC_COLN,   \
-  KC_GRV,   K11,  K12,  K13,  KC_EQL,          K15,  KC_RSFT,  KC_LGUI,  KC_LALT,  KC_LCTL,   \
-  KC_PERC,  K21,  K22,  K23,  KC_CIRC,         K25,  K26,      KC_LABK,  KC_RABK,  KC_UNDS,   \
-                       KC_0,  KC_BSLS,         K35,  K36                                      \
+  KC_TILD,  K01,  K02,  K03,  KC_PLUS,         K05,  K06,           K07,          K08,          KC_COLN,      \
+  KC_GRV,   K11,  K12,  K13,  KC_EQL,          K15,  RSFT_T(KC_N),  LGUI_T(KC_E), LALT_T(KC_O), LCTL_T(KC_I), \
+  KC_CIRC,  K21,  K22,  K23,  KC_PERC,         K25,  K26,           KC_LABK,      KC_RABK,      KC_UNDS,      \
+                       KC_0,  KC_BSLS,         K35,  K36  \
 )
 
 #define MIRYOKU_LAYERMAPPING_NAV( \
