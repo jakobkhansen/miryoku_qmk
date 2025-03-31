@@ -65,5 +65,5 @@ LAYOUT_split_3x5_2( \
   XXX, LGUI(KC_7), LGUI(KC_8), LGUI(KC_9), XXX,   XXX, XXX, XXX, XXX, XXX,   \
   XXX, LGUI(KC_4), LGUI(KC_5), LGUI(KC_6), XXX,   XXX, XXX, XXX, XXX, XXX,   \
   XXX, LGUI(KC_1), LGUI(KC_2), LGUI(KC_3), XXX,   XXX, XXX, XXX, XXX, XXX,   \
-                               K33,        K34,   XXX, XXX                   \
+                               KC_LSFT,    XXX,   XXX, XXX                   \
 )
