@@ -39,15 +39,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #ifdef POINTING_DEVICE_ENABLE
 #include "pointing_device.h"
 
-#define DEADZONE 2  // Set this to the number of counts to ignore
 
 // Modify these values to adjust the scrolling speed
-#define SCROLL_DIVISOR_H 15.0
-#define SCROLL_DIVISOR_V 15.0
+#define SCROLL_DIVISOR_H 10.0
+#define SCROLL_DIVISOR_V 10.0
 
 // Variables to store accumulated scroll values
 float scroll_accumulated_h = 0;
 float scroll_accumulated_v = 0;
+
+// Cursor movement
+#define DEADZONE 2  // Set this to the number of counts to ignore
 
 report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     if (layer_state_is(U_NAV)) {
@@ -83,3 +85,15 @@ void pointing_device_init_user(void) {
     set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
 }
 #endif
+
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    switch (index) {
+        case 0: // Left-half encoder, mouse scroll.
+            tap_code(clockwise ? KC_BRIU : KC_BRID);
+            break;
+        case 1: // Right-half encoder, volume control.
+            tap_code(clockwise ? KC_AUDIO_VOL_UP : KC_AUDIO_VOL_DOWN);
+            break;
+    }
+    return true;
+}
