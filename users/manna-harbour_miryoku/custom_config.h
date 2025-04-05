@@ -27,6 +27,15 @@
 #define SPLIT_WATCHDOG_ENABLE
 #define SPLIT_WATCHDOG_TIMEOUT 3000
 
+#ifdef POINTING_DEVICE_ENABLE
+#undef POINTING_DEVICE_GESTURES_SCROLL_ENABLE
+#define CIRQUE_PINNACLE_TAP_ENABLE
+#define DILEMMA_MINIMUM_DEFAULT_DPI 100
+#define DILEMMA_AUTO_POINTER_LAYER_TRIGGER_ENABLE
+#define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+#define AUTO_MOUSE_TIME 300
+#endif
+
 #ifdef KEYBOARD_crkbd
 #    include "3x6_3_config.h"
 #endif
@@ -35,4 +44,7 @@
 #endif
 #ifdef KEYBOARD_ferris
 #    include "3x5_2_config.h"
+#endif
+#ifdef KEYBOARD_bastardkb_dilemma
+#    include "3x5_3_config.h"
 #endif
