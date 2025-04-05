@@ -37,21 +37,21 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 }
 
 #ifdef POINTING_DEVICE_ENABLE
-#include "pointing_device.h"
-
+#    include "pointing_device.h"
 
 // Modify these values to adjust the scrolling speed
-#define SCROLL_DIVISOR_H 10.0
-#define SCROLL_DIVISOR_V 10.0
+#    define SCROLL_DIVISOR_H 10.0
+#    define SCROLL_DIVISOR_V 10.0
 
 // Variables to store accumulated scroll values
 float scroll_accumulated_h = 0;
 float scroll_accumulated_v = 0;
 
 // Cursor movement
-#define DEADZONE 2  // Set this to the number of counts to ignore
+#    define DEADZONE 2 // Set this to the number of counts to ignore
 
 report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
+    pointing_device_task_auto_mouse(mouse_report);
     if (layer_state_is(U_NAV)) {
         // Calculate and accumulate scroll values based on mouse movement and divisors
         scroll_accumulated_h += (float)mouse_report.x / SCROLL_DIVISOR_H;
@@ -82,7 +82,7 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
 
 void pointing_device_init_user(void) {
     set_auto_mouse_layer(U_MOUSE); // only required if AUTO_MOUSE_DEFAULT_LAYER is not set to index of <mouse_layer>
-    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+    set_auto_mouse_enable(true);   // always required before the auto mouse feature will work
 }
 #endif
 
