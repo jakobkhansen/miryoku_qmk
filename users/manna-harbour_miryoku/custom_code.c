@@ -40,8 +40,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 #    include "pointing_device.h"
 #    include "pointing_device_gestures.h"
 
+// Move accumulation when in deadzone
+float move_accumulated_x = 0;
+float move_accumulated_y = 0;
+
+
 // Modify these values to adjust the scrolling speed
-#    define SCROLL_DIVISOR_H 30.0
+#    define SCROLL_DIVISOR_H 20.0
 #    define SCROLL_DIVISOR_V 20.0
 
 // Variables to store accumulated scroll values
@@ -53,14 +58,14 @@ float scroll_accumulated_v = 0;
 
 report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
     pointing_device_task_auto_mouse(mouse_report);
-    if (layer_state_is(U_NAV)) {
+    if (layer_state_is(U_NAV) || layer_state_is(U_NUM)) {
         cirque_pinnacle_enable_cursor_glide(true);
         // Calculate and accumulate scroll values based on mouse movement and divisors
         scroll_accumulated_h += (float)mouse_report.x / SCROLL_DIVISOR_H;
         scroll_accumulated_v += (float)mouse_report.y / SCROLL_DIVISOR_V;
 
         // Assign integer parts of accumulated scroll values to the mouse report
-        mouse_report.h = (int8_t)scroll_accumulated_h;
+        mouse_report.h = -(int8_t)scroll_accumulated_h;
         mouse_report.v = (int8_t)scroll_accumulated_v;
 
         // Update accumulated scroll values by subtracting the integer parts
@@ -73,12 +78,30 @@ report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
         return mouse_report;
     }
     cirque_pinnacle_enable_cursor_glide(false);
-    if (mouse_report.x > -DEADZONE && mouse_report.x < DEADZONE) {
-        mouse_report.x = 0;
+    // Accumulate movement
+    move_accumulated_x += (float)mouse_report.x;
+    move_accumulated_y += (float)mouse_report.y;
+
+    int8_t move_x = (int8_t)move_accumulated_x;
+    int8_t move_y = (int8_t)move_accumulated_y;
+
+    move_accumulated_x -= move_x;
+    move_accumulated_y -= move_y;
+
+    // Apply deadzone after accumulation
+    if (move_x > -DEADZONE && move_x < DEADZONE) {
+        move_x = 0;
+        move_accumulated_x += move_x;
     }
-    if (mouse_report.y > -DEADZONE && mouse_report.y < DEADZONE) {
-        mouse_report.y = 0;
+    if (move_y > -DEADZONE && move_y < DEADZONE) {
+        move_y = 0;
+        move_accumulated_y += move_y;
     }
+
+    mouse_report.x = move_x;
+    mouse_report.y = move_y;
+
+    return mouse_report;
 
     return mouse_report;
 }
