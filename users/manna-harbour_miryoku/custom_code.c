@@ -44,7 +44,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 float move_accumulated_x = 0;
 float move_accumulated_y = 0;
 
-
 // Modify these values to adjust the scrolling speed
 #    define SCROLL_DIVISOR_H 20.0
 #    define SCROLL_DIVISOR_V 20.0
@@ -113,6 +112,7 @@ void pointing_device_init_user(void) {
 
 #endif
 
+#ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
     switch (index) {
         case 0: // Left-half encoder, mouse scroll.
@@ -124,3 +124,4 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
     }
     return true;
 }
+#endif

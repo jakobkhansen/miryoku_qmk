@@ -38,12 +38,6 @@
 #define POINTING_DEVICE_GESTURES_CURSOR_GLIDE_ENABLE
 #endif
 
-// #ifdef ENCODER_ENABLE
-#define ENCODERS_PAD_A { GP25 }
-#define ENCODERS_PAD_B { GP24 }
-#define ENCODER_RESOLUTION 2
-// #endif
-
 #ifdef KEYBOARD_crkbd
 #    include "3x6_3_config.h"
 #endif
